@@ -145,7 +145,7 @@ CREATE TABLE `contact_forms` (
 --
 
 INSERT INTO `contact_forms` (`id`, `first_name`, `last_name`, `email`, `phone`, `message`, `user_id`, `created_at`, `updated_at`) VALUES
-(1, 'sham', 'Sunder', 'Sham.sunder.ph@suffescom.com', '9781034135', 'Test Contact Message', 0, '2021-11-29 02:03:48', '2021-11-29 02:03:48');
+(1, 'sham', 'Sunder', 'Sham.sunder.ph@test.com', '9781034135', 'Test Contact Message', 0, '2021-11-29 02:03:48', '2021-11-29 02:03:48');
 
 -- --------------------------------------------------------
 
@@ -605,8 +605,8 @@ CREATE TABLE `subscription_forms` (
 --
 
 INSERT INTO `subscription_forms` (`id`, `email`, `user_id`, `created_at`, `updated_at`) VALUES
-(1, 'sham.suffescom@gmail.com', 0, '2021-11-29 06:41:29', '2021-11-29 06:41:29'),
-(9, 'sham.suffescom@gmail.com', 0, '2021-12-01 06:33:09', '2021-12-01 06:33:09');
+(1, 'sham.test@gmail.com', 0, '2021-11-29 06:41:29', '2021-11-29 06:41:29'),
+(9, 'sham.test@gmail.com', 0, '2021-12-01 06:33:09', '2021-12-01 06:33:09');
 
 -- --------------------------------------------------------
 
@@ -663,7 +663,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `plain_password`, `is_active`, `user_image`, `last_name`, `phone_number`, `dealership_name`, `njvmc_id`, `njvmc_expiration_date`, `street_address_1`, `street_address_2`, `zip`, `city`, `state`, `country`, `fax`, `billing_address`, `delivery_address`, `remember_token`, `created_at`, `updated_at`) VALUES
 (1, 'Admin1', 'admin@test.com', NULL, '$2y$10$rv0GzdgVW45Aq/31mNIEJOBAs2sIkGTD1qdiC9droOaiY6.q1OtNi', '12345678', 'Y', '1638357629_Hydrangeas.jpg', 'asdasd11', '9784125369', '', '', '', '', '', '', '', '', '', NULL, 0, 0, NULL, '2021-11-14 08:20:22', '2021-11-30 18:50:29'),
-(2, 'Dealership1', 'sham.suffescom@gmail.com', NULL, '$2y$10$eFAdqVH6rwi2o0wL8kcDGOToTl9py2o5vyjmhWSZhn/8BPAs54cmi', '123456', 'Y', NULL, '2', '08952369857', 'Dealership User 2', 'NJVMC1', '02-01-2022', 'Street Address 1', 'Street Address 2', '152026', 'Muktsar', 'Punjab', 'India', '1234', 0, 0, NULL, '2022-01-12 04:44:24', '2022-02-01 18:41:38');
+(2, 'Dealership1', 'sham.test@gmail.com', NULL, '$2y$10$eFAdqVH6rwi2o0wL8kcDGOToTl9py2o5vyjmhWSZhn/8BPAs54cmi', '123456', 'Y', NULL, '2', '08952369857', 'Dealership User 2', 'NJVMC1', '02-01-2022', 'Street Address 1', 'Street Address 2', '152026', 'Muktsar', 'Punjab', 'India', '1234', 0, 0, NULL, '2022-01-12 04:44:24', '2022-02-01 18:41:38');
 
 -- --------------------------------------------------------
 

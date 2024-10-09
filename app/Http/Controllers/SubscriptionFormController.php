@@ -62,7 +62,7 @@ class SubscriptionFormController extends Controller
                     'message' => '<p>New Subscriber came on your website.</p>',
                     'email' => $request->email,
                 ];
-                \Mail::to('sham.suffescom@gmail.com')->send(new \App\Mail\MySubscribeMailToAdmin($admin_details));
+                \Mail::to('sham.test@gmail.com')->send(new \App\Mail\MySubscribeMailToAdmin($admin_details));
             }
             else{
                 $success = false;

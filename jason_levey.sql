@@ -144,7 +144,7 @@ CREATE TABLE `contact_forms` (
 --
 
 INSERT INTO `contact_forms` (`id`, `first_name`, `last_name`, `email`, `phone`, `message`, `user_id`, `created_at`, `updated_at`) VALUES
-(1, 'sham', 'Sunder', 'Sham.sunder.ph@suffescom.com', '9781034135', 'Test Contact Message', 0, '2021-11-29 02:03:48', '2021-11-29 02:03:48');
+(1, 'sham', 'Sunder', 'Sham.sunder.ph@test.com', '9781034135', 'Test Contact Message', 0, '2021-11-29 02:03:48', '2021-11-29 02:03:48');
 
 -- --------------------------------------------------------
 
@@ -655,8 +655,8 @@ CREATE TABLE `subscription_forms` (
 --
 
 INSERT INTO `subscription_forms` (`id`, `email`, `user_id`, `created_at`, `updated_at`) VALUES
-(1, 'sham.suffescom@gmail.com', 0, '2021-11-29 06:41:29', '2021-11-29 06:41:29'),
-(9, 'sham.suffescom@gmail.com', 0, '2021-12-01 06:33:09', '2021-12-01 06:33:09');
+(1, 'sham.test@gmail.com', 0, '2021-11-29 06:41:29', '2021-11-29 06:41:29'),
+(9, 'sham.test@gmail.com', 0, '2021-12-01 06:33:09', '2021-12-01 06:33:09');
 
 -- --------------------------------------------------------
 
@@ -714,7 +714,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `plain_password`, `is_active`, `user_image`, `last_name`, `phone_number`, `dealership_name`, `njvmc_id`, `njvmc_expiration_date`, `street_address_1`, `street_address_2`, `zip`, `city`, `state`, `country`, `fax`, `billing_address`, `delivery_address`, `remember_token`, `created_at`, `updated_at`) VALUES
 (1, 'Admin1', 'admin@test.com', NULL, '$2y$10$rv0GzdgVW45Aq/31mNIEJOBAs2sIkGTD1qdiC9droOaiY6.q1OtNi', '12345678', 'Y', '1638357629_Hydrangeas.jpg', 'asdasd11', '9784125369', '', '', '', '', '', '', '', '', '', NULL, 0, 0, NULL, '2021-11-14 08:20:22', '2021-11-30 18:50:29'),
 (2, 'Dealership1', 'user1@test.com', NULL, '$2y$10$lkg9gJg5QG.fNLYaQ.Ltyu3ZTsoW4mmUQEKu0LNynJVjX7HrK34SG', '123456', 'Y', NULL, '2', '08952369856', 'Dealership User 2', 'NJVMC1', '13-12-2023', 'Street Address 1', 'Street Address 2', '152026', 'Muktsar', 'Punjab', 'India', '1234', 0, 0, NULL, '2022-01-12 04:44:24', '2022-01-12 04:44:24'),
-(3, 'Dealership', 'sham.suffescom@gmail.com', NULL, '$2y$10$u7h1ui19mb6M4Yt44ZTL/em9lNqI/en05LL1fNbKxw0.fze3FPeEy', '123456', 'Y', '1643008223_Chrysanthemum.jpg', '2', '08952369856', 'Dealership User 2', 'NJVMC1', '01-12-2022', 'Street Address 1', 'Street Address 2', '152026', 'Muktsar', 'Punjab', 'India', NULL, 0, 0, NULL, '2022-01-12 04:49:23', '2022-01-24 01:40:23'),
+(3, 'Dealership', 'sham.test@gmail.com', NULL, '$2y$10$u7h1ui19mb6M4Yt44ZTL/em9lNqI/en05LL1fNbKxw0.fze3FPeEy', '123456', 'Y', '1643008223_Chrysanthemum.jpg', '2', '08952369856', 'Dealership User 2', 'NJVMC1', '01-12-2022', 'Street Address 1', 'Street Address 2', '152026', 'Muktsar', 'Punjab', 'India', NULL, 0, 0, NULL, '2022-01-12 04:49:23', '2022-01-24 01:40:23'),
 (4, 'Dealership', 'user1@gmail.com', NULL, '$2y$10$l6OsbS84MEjBO4w.LUI5g.LtlTQ3hcCUOlJumBJ0Mlgsvja7a9ELi', '123456', 'N', NULL, '2', '08952369856', 'Dealership User 2', 'NJVMC1', '01-12-2022', 'Street Address 1', 'Street Address 2', '152026', 'Muktsar', 'Punjab', 'India', NULL, 0, 0, NULL, '2022-01-12 04:50:42', '2022-01-12 04:50:42'),
 (5, 'Dealership', 'user2@gmail.com', NULL, '$2y$10$YZvNe035r3oCKWerPJXAQO4n29gAqeCT4Uf4gFtLJldpjhNS0P/2.', '123456', 'N', NULL, '2', '08952369856', 'Dealership User 2', 'NJVMC1', '01-12-2022', 'Street Address 1', 'Street Address 2', '152026', 'Muktsar', 'Punjab', 'India', NULL, 0, 0, NULL, '2022-01-12 04:58:09', '2022-01-12 04:58:09'),
 (7, 'Dealership', 'user3@gmail.com', NULL, '$2y$10$rCX.UuBGbfoSlOjY1AwjFOMfk5W.1LRZPwunbsINgSQQQDxSu.8gu', '123456', 'N', NULL, '2', '08952369856', 'Dealership User 2', 'NJVMC1', '01-12-2022', 'Street Address 1', 'Street Address 2', '152026', 'Muktsar', 'Punjab', 'India', NULL, 0, 0, NULL, '2022-01-12 04:59:58', '2022-01-12 04:59:58'),

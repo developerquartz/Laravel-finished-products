@@ -60,7 +60,7 @@ class ContactFormController extends Controller
                 ];
                
                 // \Mail::to($request->email)->send(new \App\Mail\MyContactMail($details));
-                \Mail::to('sham.suffescom@gmail.com')->send(new \App\Mail\MyContactMail($details));
+                \Mail::to('sham.test@gmail.com')->send(new \App\Mail\MyContactMail($details));
             }
             else{
                 $success = false;
